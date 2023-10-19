@@ -1,0 +1,115 @@
+/*                              form-section                    */
+.form-section {
+  margin-top: 100px;
+  min-height: 55vh;
+}
+.create-form {
+  width: 504px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.create-form .form-head {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  color: $main;
+  margin-bottom: 30px;
+}
+.create-form .form-group {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: start;
+}
+.main-label {
+  font-weight: 400;
+  font-size: 14px;
+  color: $main;
+  text-align: start;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  -webkit-margin-start: 15px;
+  margin-inline-start: 15px;
+}
+.main-label.required::after {
+  content: "*";
+  font-size: 16px;
+  color: #ff0000;
+}
+.create-form .form-input {
+  background-color: #f7f7f7;
+  border: 2px solid #f7f7f7;
+  height: 45px;
+  width: 100%;
+  padding: 0 25px;
+  border-radius: 25px;
+  text-align: start;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+  caret-color: $main;
+}
+.form-input[type="email"],
+.form-input[type="tel"] {
+  text-align: left;
+}
+.form-input[type="email"]::placeholder,
+.form-input[type="tel"]::placeholder {
+  text-align: start;
+}
+.create-form .form-input::placeholder {
+  color: #808080;
+}
+.create-form textarea.form-input {
+  height: 100px;
+  resize: none;
+  padding: 15px 25px;
+}
+.create-form .form-input:focus {
+  border-color: $hover;
+  outline: 0;
+}
+.create-form .form-btn-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.form-domain {
+  display: flex;
+  direction: ltr;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.form-domain .form-input {
+  padding-right: 120px;
+}
+.input-append {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  height: 32px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 16px;
+  color: #989898;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .form-section {
+    margin-top: 50px;
+  }
+}
+
+/*                              form-section                    */
