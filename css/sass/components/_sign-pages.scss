@@ -67,7 +67,7 @@
   border: 2px solid $back;
   height: 48px;
   width: 100%;
-  padding: 0 50px;
+  padding: 0 25px;
   border-radius: 24px;
   text-align: start;
   color: $text;
@@ -85,7 +85,7 @@
   direction: ltr;
 }
 .form-input[type="tel"] {
-  padding-left: 95px;
+  padding-left: 80px;
 }
 .custom-tel[type="tel"] {
   padding-left: 20px;
@@ -114,7 +114,7 @@ html[dir="rtl"] .custom-tel[type="tel"] {
   transform: translateY(-50%);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.6;
   color: $sec;
   left: 12.5px;
   direction: rtl;

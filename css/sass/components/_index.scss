@@ -327,7 +327,7 @@
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   transition: all 0.4s ease-in-out;
   text-align: start;
   overflow: hidden;
@@ -351,6 +351,11 @@
   justify-content: flex-start;
   gap: 5px;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1199px) {
+  .product .product-name {
+    font-size: 14px;
+  }
 }
 .new-price {
   font-weight: 700;
@@ -384,6 +389,10 @@
   transition: all 0.3s ease-in-out;
   &:hover {
     background-color: $hover;
+    color: $white;
+  }
+  &.active {
+    background-color: #e24a56;
     color: $white;
   }
 }
