@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>dare</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/line-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body class="internal-page">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- header section -->
+    <header>
+      <div class="top-header">
+        <div class="nav-header">
+          <figure class="img-logo">
+            <a href="index.html"
+              ><img src="images/DD-Assets/logo.svg" class="img-fluid"
+            /></a>
+          </figure>
+          <div class="navgition">
+            <div class="nav-head">
+              <a href="index-en.html" class="lang-ancor"> English</a>
+              <button class="close-menu">
+                <i class="las la-times"></i>
+              </button>
+            </div>
+            <ul class="big-menu list-unstyled">
+              <li>
+                <a href="#"> الرسم التشكيلي </a>
+              </li>
+              <li>
+                <a href="#"> اللوحات الجدارية </a>
+              </li>
+              <li>
+                <a href="#"> ورق الجدران</a>
+              </li>
+              <li class="mega-menu">
+                <a href="#" class="btn-div chevron-down">
+                  المشغولات المعدنية
+                </a>
+                <ul class="cats-dispaly cats-div list-unstyled">
+                  <li>
+                    <a href="#"> المشغولات المعدنية </a>
+                  </li>
+                  <li>
+                    <a href="#"> المشغولات المعدنية </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"> الرسم الخاص </a>
+              </li>
+              <li>
+                <a href="#"> الإستشارات التصميمية</a>
+              </li>
+              <li>
+                <a href="#"> التحف</a>
+              </li>
+              <li>
+                <a href="#"> العروض</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-cont">
+            <div class="show-icons">
+              <div class="header-icons">
+                <button class="fixed-search">
+                  <i class="las la-search"></i>
+                </button>
+                <button type="button" class="add-to">
+                  <i class="las la-shopping-cart"></i>
+                  <span class="counter">0</span>
+                </button>
+                <div class="dropdown cat-anchor">
+                  <div class="add-to">
+                    <div class="user-cont">
+                      <i class="las la-user"></i>
+                    </div>
+                    <div class="dropdown-content">
+                      <a class="cat-drop" href="sign-in.html">تسجيل الدخول</a>
+                      <a class="cat-drop" href="register.html">حساب جديد</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="menu-bars" id="menu-id">
+                  <i class="las la-bars"></i>
+                </button>
+                <a href="index-en.html" class="lang-ancor"> English</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay -->
+      <div class="overlay-box">
+        <button role="button" type="button" title="" class="close-search">
+          <i class="las la-times"></i>
+        </button>
+        <div class="search-section">
+          <form class="search-form">
+            <label for="search-input">البحث</label>
+            <div class="form-input-relative">
+              <input
+                class="search-input"
+                type="text"
+                name=""
+                value=""
+                placeholder="ابحث باسم المنتج او التصنيف"
+              />
+              <button class="search-button">
+                <i class="las la-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- overlay -->
+    </header>
+    <!-- header section     -->
+    <!-- breadcrumb section -->
+    <section class="breadcrumb-sec">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="item-home">
+            <a class="bread-link bread-home aFixx" href="index.html"
+              >الرئيسية
+            </a>
+          </li>
+          <li class="active item-23">
+            <span class="bread-current"> إتمام الطلب</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <!-- breadcrumb section -->
+    <!-- cart-section -->
+    <section class="single-page">
+      <div class="container">
+        <div class="checkout-grid">
+          <div class="checkout-flex">
+            <form action="">
+              <div class="checkout-cont">
+                <div class="checkout-header">
+                  <span class="checkout-name">عنوان الشحن</span>
+                </div>
+                <ul
+                  class="nav nav-tabs add-address-cont"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link add-select-address active"
+                      id="add-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#add"
+                      href="#add"
+                      type="button"
+                      role="tab"
+                      aria-controls="add"
+                      aria-selected="true"
+                    >
+                      <i class="las la-plus"></i>
+                      اضافة عنوان جديد
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link add-select-address"
+                      id="choose-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#choose"
+                      href="#choose"
+                      type="button"
+                      role="tab"
+                      aria-controls="choose"
+                      aria-selected="false"
+                    >
+                      <i class="las la-address-book"></i>
+                      اختيار من دفتر العناوين
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="add"
+                    role="tabpanel"
+                    aria-labelledby="add-tab"
+                  >
+                    <div class="group-input">
+                      <div class="form-group">
+                        <label class="form-label"> الاسم الأول</label>
+                        <input type="text" class="form-input custom-input" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label"> الاسم الأخير</label>
+                        <input type="text" class="form-input custom-input" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label"> رقم الجوال</label>
+                        <div class="form-input-relative">
+                          <input
+                            type="tel"
+                            class="tel-input form-input custom-input"
+                            placeholder="5xxxxxxxx"
+                          />
+                          <span class="tel-lang">
+                            996+
+                            <img src="images/lang.png" alt="" />
+                          </span>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">المنطقة</label>
+                        <div class="form-input-relative custom-input">
+                          <i class="las la-angle-down angle-select"></i>
+                          <select class="select_input select2-city" name="city">
+                            <option value="two">الرياض</option>
+                            <option value="three">المدينة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">المدينة</label>
+                        <div class="form-input-relative custom-input">
+                          <i class="las la-angle-down angle-select"></i>
+                          <select class="select_input select2-city" name="city">
+                            <option value="two">الرياض</option>
+                            <option value="three">المدينة</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label"> اسم العنوان</label>
+                        <input type="text" class="form-input custom-input" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label"> وصف العنوان</label>
+                        <input type="text" class="form-input custom-input" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label"> الموقع على الخريطة</label>
+                        <div class="form-input-relative">
+                          <span class="map-icon">
+                            <i class="las la-map"></i>
+                          </span>
+                          <button class="form-input custom-input">
+                            اضغط لتحديد الموقع
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="choose"
+                    role="tabpanel"
+                    aria-labelledby="choose-tab"
+                  >
+                    <div class="checkout-cont">
+                      <div class="payment-cont">
+                        <div class="form-group">
+                          <div class="check-group">
+                            <div class="check-width">
+                              <label class="check-label">
+                                <span class="payment-radio">
+                                  <input type="radio" name="place" />
+                                  <span class="checkmark"></span>
+                                  <span class="check-text">العمل</span>
+                                </span>
+                              </label>
+                            </div>
+                            <div class="check-width">
+                              <label class="check-label">
+                                <span class="payment-radio">
+                                  <input type="radio" name="place" />
+                                  <span class="checkmark"></span>
+                                  <span class="check-text">المنزل</span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-cont">
+                <div class="checkout-header">
+                  <span class="checkout-name">طرق الشحن</span>
+                </div>
+                <div class="payment-cont">
+                  <div class="form-group">
+                    <div class="check-group">
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="ship" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">ارامكس</span>
+                          </span>
+                          <span class="payment-text">20 ر.س</span>
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="ship" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">دي اتش إل</span>
+                          </span>
+                          <span class="payment-text">22 ر.س</span>
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="ship" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">بو بي أس</span>
+                          </span>
+                          <span class="payment-text">22 ر.س</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout-cont mb-0">
+                <div class="checkout-header">
+                  <span class="checkout-name">طرق الدفع</span>
+                </div>
+                <div class="payment-cont">
+                  <div class="form-group">
+                    <div class="check-group">
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="pay" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">فيزا/ ماستركارد</span>
+                          </span>
+                          <div class="pay-img">
+                            <img
+                              src="images/DD-Assets/mastercard.png"
+                              alt="pay"
+                              class="img-fluid"
+                            />
+                            <img
+                              src="images/DD-Assets/visa.png"
+                              alt="pay"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="pay" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">مدى</span>
+                          </span>
+                          <div class="pay-img">
+                            <img
+                              src="images/DD-Assets/mada.png"
+                              alt="pay"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="pay" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">ابل باي</span>
+                          </span>
+                          <div class="pay-img">
+                            <img
+                              src="images/DD-Assets/applepay.png"
+                              alt="pay"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                      <div class="check-width">
+                        <label class="check-label">
+                          <span class="payment-radio">
+                            <input type="radio" name="pay" />
+                            <span class="checkmark"></span>
+                            <span class="check-text">اس تي سي باي</span>
+                          </span>
+                          <div class="pay-img">
+                            <img
+                              src="images/DD-Assets/stcpay.png"
+                              alt="pay"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="checkout-cart">
+            <div class="checkout-cont">
+              <h3 class="cart-head">ملخص سلة الشراء</h3>
+              <div class="collapse-group">
+                <button class="btn_collapse_ color_toggle poen_co">
+                  <span class="cart-item">
+                    <span>1</span>
+                    منتج في السلة
+                  </span>
+                  <div class="icon-wrapper">
+                    <div
+                      class="bar backg_toggle bar--vertical poen_backg"
+                    ></div>
+                    <div
+                      class="bar backg_toggle bar--horizontal is-active poen_backg"
+                    ></div>
+                  </div>
+                </button>
+                <div class="toggle_collapse open-collapse">
+                  <div class="cart-flex">
+                    <div class="cart-content services-content">
+                      <span class="cart-name">طلب رسم خاص</span>
+                      <span class="cart-total">
+                        <span class="cart-count"> x1 </span>
+                        <span> 1500 ر.س </span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="checkout">
+                  <table class="checkout-table">
+                    <tbody>
+                      <tr>
+                        <td class="table-name">إجمالي المنتجات</td>
+                        <td class="table-price">1500 ر.س</td>
+                      </tr>
+                      <tr>
+                        <td class="table-name">الشحن (ارامكس)</td>
+                        <td class="table-price">20 ر.س</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="total-cont">
+                    <span class="table-name">إجمالي الطلب</span>
+                    <span class="total-price">1844.85 ر.س</span>
+                  </div>
+                  <button class="cart-btn">اتمام الطلب</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- cart-section -->
+    <!-- footer section -->
+    <footer>
+      <figure class="footer-bg">
+        <img
+          src="images/DD-Assets/about-pattern.svg"
+          alt="bg"
+          class="img-fluid"
+        />
+      </figure>
+      <div class="container">
+        <div class="footer-cont">
+          <div class="row">
+            <div class="col-md-4 col-xs-12">
+              <div class="footer-info">
+                <figure class="img-logo">
+                  <a href="index.html"
+                    ><img
+                      src="images/DD-Assets/logo-white.svg"
+                      class="img-fluid"
+                      alt="img-logo"
+                  /></a>
+                </figure>
+                <p class="footer-right">جـــرأة للديكـــور 2023 ©</p>
+                <div class="pay-img">
+                  <img
+                    src="images/DD-Assets/mada.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/stcpay.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/applepay.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/mastercard.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/visa.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/aramex.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/ups.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                  <img
+                    src="images/DD-Assets/dhl.png"
+                    alt="pay"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="social">
+                  <a href="#" class="social-link">
+                    <i class="lab la-telegram-plane"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-youtube"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-twitter"></i>
+                  </a>
+                  <a href="#" class="social-link">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">روابط سريعة</h2>
+                <ul class="nav-foot list-unstyled">
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">من نحن</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">الأسئلة الشائعة</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">الشروط والأحكام</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">الأسئلة الشائعة</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">سياسة الخصوصية</a>
+                  </li>
+                  <li class="nav-foot-li">
+                    <a href="#" class="nav-foot-link">تواصل معنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="nav-foot-cont">
+                <h2 class="nav-foot-header foot-header">معلومات التواصل</h2>
+                <div class="nav-foot">
+                  <ul class="list-unstyled">
+                    <li class="nav-foot-li">
+                      <div class="contact-box">
+                        <i class="las la-home"></i>
+                        <span> الرياض - المملكة العربية السعودية </span>
+                      </div>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="tel:+0540000000" class="contact-box">
+                        <i class="las la-phone"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="#" class="contact-box">
+                        <i class="lab la-whatsapp"></i>
+                        <span style="direction: ltr"> +0540000000 </span>
+                      </a>
+                    </li>
+                    <li class="nav-foot-li">
+                      <a href="mailto:info@daredesign.com" class="contact-box">
+                        <i class="las la-envelope"></i>
+                        <span> info@daredesign.com </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="social">
+                    <a href="#" class="social-link">
+                      <i class="lab la-telegram-plane"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-youtube"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                      <i class="lab la-facebook-f"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+    <!-- arrow to top -->
+    <button class="arrow-top">
+      <i class="las la-arrow-up"></i>
+    </button>
+    <!-- arrow to top -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
