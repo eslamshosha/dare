@@ -2953,6 +2953,7 @@ html[dir=rtl] .list-btn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px 0;
 }
 .list .product .product-name {
   margin: 0;
