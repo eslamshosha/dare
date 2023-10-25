@@ -314,7 +314,6 @@ html[dir="rtl"] .fixed-search {
   .top-header .header-icons {
     gap: 15px;
   }
-  
 }
 @media (max-width: 991px) {
   .hide-sm {
@@ -426,6 +425,7 @@ html[dir="rtl"] .fixed-search {
     align-items: center;
     justify-content: space-between;
     color: $main;
+    font-weight: 700;
     font-size: 16px;
   }
   /*                    menu in phone size                      */
@@ -453,7 +453,7 @@ html[dir="rtl"] .fixed-search {
   opacity: 0;
   visibility: hidden;
   /* width: max-content; */
-  width: 120px;
+  width: 180px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.11);
   display: flex;

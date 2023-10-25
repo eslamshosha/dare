@@ -24,8 +24,8 @@
   max-width: 100%;
   margin: 0 auto;
 }
-.form-cont{
-  text-align: center
+.form-cont {
+  text-align: center;
 }
 .upper-head {
   @include flexCenter;
@@ -67,7 +67,22 @@
   border: 2px solid $back;
   height: 48px;
   width: 100%;
-  padding: 0 25px;
+  padding: 0 50px;
+  border-radius: 24px;
+  text-align: start;
+  color: $text;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  @include tr;
+  caret-color: $main;
+}
+select {
+  background-color: $back;
+  border: 2px solid $back;
+  height: 48px;
+  width: 100%;
+  padding: 0 50px;
   border-radius: 24px;
   text-align: start;
   color: $text;
@@ -414,7 +429,7 @@ html[dir="ltr"] .return-link i {
   color: $sec;
   text-align: center;
   margin: 0 auto;
-  margin-top:30px;
+  margin-top: 30px;
 }
 .term-cont button {
   background-color: transparent;
@@ -597,7 +612,7 @@ html[dir="ltr"] .return-link i {
   gap: 15px 20px;
   width: 100%;
 }
-.page-container form{
+.page-container form {
   width: 100%;
 }
 .group-input .form-group {
@@ -646,7 +661,7 @@ html[dir="ltr"] .return-link i {
   flex-shrink: 0;
   background-color: $hover;
   transition: all 0.3s ease-in-out;
-  &:hover{
+  &:hover {
     text-decoration: none;
     color: $white;
     background-color: $main;
@@ -662,7 +677,7 @@ html[dir="ltr"] .return-link i {
   transform: translateY(-50%);
   inset-inline-end: 20px;
   font-size: 14px;
-  color: #9093A3;
+  color: #9093a3;
   pointer-events: none;
 }
 
@@ -835,7 +850,7 @@ html[dir="ltr"] .return-link i {
 .success-icon {
   font-size: 100px;
   margin-bottom: 5px;
-  color: #74D557;
+  color: #74d557;
 }
 .success-title {
   font-size: 16px;
