@@ -2940,7 +2940,7 @@ html[dir=rtl] .list-btn {
 }
 
 .list .product-hover {
-  max-width: 200px;
+  max-width: 180px;
 }
 
 .btn-cont2 {
@@ -2952,11 +2952,10 @@ html[dir=rtl] .list-btn {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 10px 0;
 }
 .list .product .product-name {
-  margin: 0;
+  margin: 0 0 30px;
 }
 .list .price-box {
   margin: 0;
@@ -2988,6 +2987,12 @@ html[dir=rtl] .list-btn {
   font-size: 24px;
 }
 .list .btn-cont2 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+.list .list-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3662,11 +3667,15 @@ html[dir=rtl] .list-btn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
   }
-  .cart-table .table-btn {
+  .cart-table .table-sm-btn {
     position: absolute;
     top: 15px;
     inset-inline-end: 0;
+  }
+  .cart-table tbody td:nth-of-type(3) {
+    padding-inline-start: 78px;
   }
   .cart-table tbody td:nth-of-type(2) {
     display: none;
